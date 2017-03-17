@@ -1,19 +1,31 @@
 {
     "version": "0.2.0",
     "configurations": [{
-        
-            "type": "chrome",
+            "name": "Launch Current Open File in Firefox",
+            "type": "firefox",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "reAttach": true,
+            "file": "${file}"
+        },
+        {
+            "name": "Launch localhost",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost/index.html",
             "webRoot": "${workspaceRoot}"
         },
         {
-            "type": "chrome",
-            "request": "attach",
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "webRoot": "${workspaceRoot}"
+            "name": "Attach",
+            "type": "firefox",
+            "request": "attach"
+        },
+        {
+            "name": "Launch addon",
+            "type": "firefox",
+            "request": "launch",
+            "addonType": "addonSdk",
+            "addonPath": "${workspaceRoot}"
         }
     ]
 }
