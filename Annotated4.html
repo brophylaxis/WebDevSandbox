@@ -17,10 +17,15 @@
     <h1>hello world</h1>
     <h2>smaller hello world</h2>
     <h3>tiny hello world</h3> hello
-    <p> hello
-        <p> hello
-            <!-- but html5 wants you to separate STYLING from STRUCTURE -->
-            <!-- Remember, STRUCTURE is for body. use "strong" or "em" instead of "b" and "i", "b" and "i" is technically STYLING-->
+
+    <!-- <p> tag is paragraph !-->
+    <!-- html5 wants you to separate STYLING from STRUCTURE -->
+    <!-- Remember, STRUCTURE is for body. use "strong" or "em" instead of "b" and "i", "b" and "i" is technically STYLING
+    also, you can nest "strong" and "em" for increasing effects!-->
+    <p> <em>hello</em>
+        <p> <strong>hello</strong>
+
+
             <ol>
                 <!-- ordered list -->
                 <li>
@@ -38,6 +43,8 @@
                 <li>green</li>
                 <li>blue</li>
             </ul>
+            
+
             <!-- div is a block level element meaning it takes up its own line. its block breaks apart content from surrounding content -->
             <!-- span is a container but it is an in-line container, does not break apart content -->
             <div id="BIG DIV">BIG DIV Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sequi cumque vel dolorem, optio laudantium itaque voluptate dolore delectus rerum pariatur neque, omnis suscipit ab deleniti, ut error id. Ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque obcaecati, perferendis quisquam quod sequi fuga voluptatibus vero quia nesciunt. Recusandae, sint enim nesciunt, repellendus eaque nobis cumque similique nemo officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic itaque mollitia, voluptatem, ending div here, it should split the rest of the text onto another line.BIG DIV</div>
@@ -45,6 +52,8 @@
                 <div>NEW DIV dolores eius animi!NEW DIV</div> Vitae perspiciatis fuga aliquam, illo totam atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam quod ad tempora, aspernatur voluptates harum ratione! Illum ipsam, laboriosam, repellendus dolore minus officia quia, perferendis repudiandae adipisci illo quos.
                 <span>SPAN Lorem ipsum dolor sit amet, SPAN</span> consectetur adipisicing elit.
                 <div>DIV Iste sed veniam DIV</div> quod autem quaerat ea aperiam molestias, similique a inventore dolores eligendi repellendus necessitatibus esse aut ut reprehenderit ducimus animi. END BIG DIV 2</div>
+            
+
             <table border="1">
                 <thead>
                     <!-- simply designates head row for designers reading the code. no effect on output -->
@@ -67,6 +76,11 @@
             </table>
 
 
+
+            <h1>Basic input boxes (not a form yet)</h1>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <input type="submit">
 </body>
 
 </html>
