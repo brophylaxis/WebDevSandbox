@@ -1,0 +1,143 @@
+<br><br>
+<!DOCTYPE html>
+<html>
+<!-- type htmlboiler then press tab to insert boilerplate code -->
+<!-- CTRL SHIFT B opens up output in browser in windows -->
+
+<head>
+    <!-- metadata goes in head -->
+    <!-- the title value is important for page name and for search indexing-->
+    <title>
+        The Ontological Crisis Hotline
+    </title>
+</head>
+
+
+
+<body>
+    <!-- HTML ATTRIBUTE REFERENCE: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes -->
+    <!-- content goes in body -->
+    <h1>hello world</h1>
+    <h2>smaller hello world</h2>
+    <h3>tiny hello world</h3> hello
+
+<br><br>
+<br><br>
+
+    <!-- <p> tag is paragraph !-->
+    <!-- html5 wants you to separate STYLING from STRUCTURE -->
+    <!-- Remember, STRUCTURE is for body. use "strong" or "em" instead of "b" and "i", "b" and "i" is technically STYLING
+    also, you can nest "strong" and "em" for increasing effects!-->
+    <p> <em>hello</em>
+        <p> <strong>hello</strong>
+            <ol>
+                <!-- ordered list -->
+                <li>
+                    <h1>large hello</h1>
+                </li>
+                <li>
+                    <h5>smaller hello</h5>
+                </li>
+                <ul>
+                    <li>
+            </ol>
+            <ul>
+                <!-- bulletpoint list. unordered -->
+                <li>red</li>
+                <li>green</li>
+                <li>blue</li>
+            </ul>
+
+
+<br><br>
+<br><br>
+
+
+            <!-- div is a block level element meaning it takes up its own line. its block breaks apart content from surrounding content -->
+            <!-- span is a container but it is an in-line container, does not break apart content -->
+            <div id="BIG DIV">BIG DIV Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sequi cumque vel dolorem, optio laudantium itaque voluptate dolore delectus rerum pariatur neque, omnis suscipit ab deleniti, ut error id. Ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque obcaecati, perferendis quisquam quod sequi fuga voluptatibus vero quia nesciunt. Recusandae, sint enim nesciunt, repellendus eaque nobis cumque similique nemo officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic itaque mollitia, voluptatem, ending div here, it should split the rest of the text onto another line.BIG DIV</div>
+
+            <div id="BIG DIV 2">BIG DIV 2 tempore iure, ipsa impedit quam illo laboriosam
+                <div>NEW DIV dolores eius animi!NEW DIV</div> Vitae perspiciatis fuga aliquam, illo totam atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam quod ad tempora, aspernatur voluptates harum ratione! Illum ipsam, laboriosam, repellendus dolore minus officia quia, perferendis repudiandae adipisci illo quos.
+                <span>SPAN Lorem ipsum dolor sit amet, SPAN</span> consectetur adipisincing elit.
+                <div>DIV Iste sed veniam DIV</div> quod autem quaerat ea aperiam molestias, similique a inventore dolores eligendi repellendus necessitatibus esse aut ut reprehenderit ducimus animi. END BIG DIV 2</div>
+
+<br><br>
+<br><br>
+
+            <table border="1">
+                <thead>
+                    <!-- simply designates head row for designers reading the code. no effect on output -->
+                    <tr>
+                        <th>pleasure</th>
+                        <th>pain</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- simply designates table body for same audience -->
+                    <tr>
+                        <td>vahjeen</td>
+                        <td>happiness</td>
+                    </tr>
+                    <tr>
+                        <td>penis</td>
+                        <td>has a sad</td>
+                    </tr>
+                </tbody>
+            </table>
+
+<br><br>
+<br><br>
+
+            <h1>Basic forms</h1>
+            <!-- -->
+            <!-- form results in ACTION behavior. without ACTION attribute, default behavior is to reload page
+
+            ACTION sends data somewhere like a URL or backend db
+            METHOD is http method (get/post)
+            SUBMIT performs ACTION 
+
+            note that TYPE PASSWORD does not encrypt password entered. passes data as plaintext visible in URL
+
+            i.e. https://www.google.com/?data+name+of+username+content=test+name&data+name+of+password+content=test+password
+            -->
+            <form action="http://www.google.com" method="GET">
+                <input name="data name of input content" id="input1" type="text" placeholder="text that shows in input field" autocomplete="true" autofocus="true">
+                <input name="data name of field content" id="input2" type="password" placeholder="text that shows in input field:" >
+                <input type="submit ">
+
+                <p><input id="input3 " type="button "></p>
+                <p><input id="input4 " type="radio "></p>
+                <p><input id="input6 " type="checkbox " checked="true "></p>
+            </form>
+
+<br><br>
+
+            <form action="http://www.google.com">
+                <label>Username: 
+                    <input type="text" placeholder="input username here">
+                </label>
+                <label>Password:
+                    <input type="password" placeholder="input password here">
+                </label>
+
+                <input type="submit">
+            </form>
+<br>
+<br>
+
+            <form action="http://www.google.com">
+                <label for="username">Your Username:</label>
+                <input id="username" type="text" placeholder="input username here">
+                <label for="password">Your Password:</label>
+                <input id="password" type="password" placeholder="input password here">
+                
+                <input type="submit">
+            </form>
+
+
+
+</body>
+
+</html>
